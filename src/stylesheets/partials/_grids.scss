@@ -1,0 +1,68 @@
+// Base Font Weight
+$light-font: 100;
+$regular-font: 400;
+$bold-font: 600;
+
+// Base Font Family
+$base-font-family: sans-serif;
+$base-font-weight: $regular-font;
+$base-font-size: 13px;
+$base-line-height: 1.4;
+
+// Fonts
+$boggle-regular: Bogle-Regular, sans-serif;
+$boggle-medium: Bogle-medium, sans-serif;
+$boggle-bold: Bogle-Bold, sans-serif;
+
+// Font Variants
+$font-12: 12px;
+$font-14: 14px;
+$font-16: 16px;
+
+.row::before,
+.row::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1000px;
+}
+
+// For Desktop
+@media only screen and (min-width: 768px) {
+  .one {
+    width: 100%;
+  }
+  .half {
+    width: calc(100% / 2);
+  }
+  .one-third {
+    width: calc(100% / 3);
+  }
+  .one-fourth {
+    width: calc(100% / 4);
+  }
+  .two-thirds {
+    width: calc(100% / 3 * 2);
+  }
+  .column {
+    float: left;
+  }
+}
+
+// For Mobile Phones
+.one,
+.one-third,
+.two-thirds,
+.one-fourth,
+.half {
+  width: 100%;
+}
+
+
+
+

@@ -1,0 +1,21 @@
+// imports for all mixins + global project variables
+
+@mixin avatar($radius-percentage, $width, $height) {
+  -webkit-border-radius: $radius-percentage;
+  -moz-border-radius: $radius-percentage;
+  border-radius: $radius-percentage;
+  height: $height;
+  width: $width;
+}
+
+@mixin divider($color, $thickness) {
+  background-color: $thickness;
+  width: $thickness;
+}
+
+// Border radius if required for +/- block component
+@mixin shape-block($args...) {
+  border-radius: $args;
+}
+
+

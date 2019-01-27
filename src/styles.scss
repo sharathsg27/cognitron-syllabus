@@ -1,0 +1,172 @@
+/* You can add global styles to this file, and also import other style files */
+@import "stylesheets/partials/grids";
+@import "stylesheets/partials/base";
+
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+  background: #E7EEF7;
+  margin: 0 !important;
+}
+
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+$base-icon-font: 16px;
+
+.text-center {
+  text-align: center !important;
+}
+
+.label {
+  border-radius: 13px;
+  padding: 5px 10px;
+  font-size: $font-12;
+  font-family: $boggle-bold;
+}
+
+.label-warning {
+  @extend .text-white;
+  background: #F5A623;
+}
+
+.label--bordered-warning {
+  border: 1px solid #F5A623;
+  border-radius: 13px;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.v-align-middle {
+  vertical-align: middle !important;
+}
+
+.divider {
+  display: inline-block;
+  width: 1px;
+  background-color: #979797;
+  margin: 0 10px;
+  height: 1em;
+}
+
+.d-inline {
+  display: inline-block !important;
+}
+
+// Text fields default's
+.mat-text-input {
+  width: 280px;
+  max-width: 280px;
+  height: 56px;
+}
+
+// Number fields default's
+.mat-num-input {
+  width: 111px;
+  max-width: 111px;
+  height: 56px;
+}
+
+// Hide Input Spinner
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+}
+
+// Over ride of input field native styles
+#global-form {
+
+  ::ng-deep .mat-form-field {
+
+    // Wrappers
+
+    ::ng-deep .mat-form-field-ripple {
+      background: #9B9B9B !important;
+    }
+
+    ::ng-deep .mat-form-field-underline {
+      background: #9B9B9B !important;
+      height: 2px;
+    }
+
+    // Placeholder
+    ::ng-deep .mat-form-field-label {
+      font-size: $font-14 !important;
+      color: #5E5F5F;
+    }
+
+    ::ng-deep .mat-focused .mat-form-field-label {
+      padding-top: 6px !important;
+    }
+
+  }
+
+  ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-infix {
+    margin-left: 12px !important;
+  }
+
+  ::ng-deep .mat-form-field-flex {
+    background: rgba(233, 235, 240, 0.70) !important;
+    border-radius: 3px !important;
+  }
+}
+
+// Text types
+.text-danger {
+  color: #CE7680 !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+// Default Button
+.btn {
+  padding: 11px 12px;
+
+  span {
+    font-size: $font-14;
+    font-family: $boggle-bold;
+    text-transform: uppercase;
+  }
+}
+
+
+// Bordered buttons
+.--btn-border-danger {
+  @extend .text-danger;
+  border: 1px solid #CE7680;
+  border-radius: 2px;
+  width: 119px;
+
+  &:hover {
+    background-color: rgba(253, 206, 203, 0.34) !important;
+  }
+}
+
+// Filled buttons
+.--btn-primary {
+  @extend .text-white;
+  background: #3E9FED;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 2px;
+  width: 92px;
+}
+
+// Dynamic Margin's
+@for $i from 1 through 100 {
+  .m-l-#{$i} {
+    margin-left: #{$i}px;
+  }
+  .m-r-#{$i} {
+    margin-right: #{$i}px;
+  }
+}
