@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "side-nav.component.scss"
+  ],
+  "names": [],
+  "mappings": "AAEE;EACE;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;;;AAMN;EACE;EACA;EACA;EACA;;AAEA;EACE;EACA;;;AAKJ;EACE;EACA;;AAEA;EACE;EACA;;AAEA;EACE;;AAIJ;EACE;EACA;EACA;;;AAKJ;EACE",
+  "file": "side-nav.component.css"
+}

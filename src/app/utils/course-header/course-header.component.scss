@@ -1,0 +1,59 @@
+@import "../../../stylesheets/partials/grids";
+
+section {
+
+  .header {
+    background: #fff !important;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    width: 1212px;
+    padding: 0 23px !important;
+
+    .main-info {
+      flex: 1 1 auto;
+
+      .name {
+        font-size: $font-16;
+        color: #000000;
+        letter-spacing: 0;
+        line-height: 22px;
+        font-family: $boggle-regular;
+      }
+
+      .title {
+        font-size: $font-16;
+        color: rgba(74, 74, 74, 0.84);
+        letter-spacing: 0;
+        font-family: $boggle-bold;
+      }
+    }
+
+    .additional-info {
+      font-family: $boggle-bold;
+
+      .name {
+        font-size: $font-12;
+        color: rgba(74, 74, 74, 0.67);
+        letter-spacing: 0;
+        text-transform: uppercase;
+        margin-right: 15px;
+      }
+    }
+
+    .main-actions {
+      display: flex;
+      align-items: center;
+
+      .name {
+        font-size: $font-12;
+        color: rgba(74, 74, 74, 0.67);
+        letter-spacing: 0;
+        text-transform: uppercase;
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+    }
+  }
+}

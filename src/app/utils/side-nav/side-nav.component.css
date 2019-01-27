@@ -1,0 +1,50 @@
+.mat-sidenav .side-nav-container {
+  height: 1345px !important;
+  width: 228px !important;
+  background: #fff !important;
+}
+
+.mat-sidenav .side-nav-container .brand {
+  padding: 10px 24px;
+  width: 203px;
+  height: 91px;
+  display: inline-block;
+}
+
+.subject {
+  color: #3E9FED;
+  font-family: Bogle-Regular, serif;
+  font-size: 14px;
+  padding: 0 24px;
+}
+
+.subject .logo {
+  vertical-align: sub !important;
+  font-size: 16px;
+}
+
+.mat-nav-list {
+  margin-top: 37px;
+  width: 228px;
+}
+
+.mat-nav-list .mat-list-item {
+  font-size: 14px;
+  height: 38px;
+}
+
+.mat-nav-list .mat-list-item .mat-list-item-content {
+  padding: 0 24px !important;
+}
+
+.mat-nav-list .mat-list-item:focus {
+  border-left: 3px solid #3E9FED;
+  font-weight: 600;
+  color: #4A4A4A;
+}
+
+.action-control {
+  margin-top: 32px;
+}
+
+/*# sourceMappingURL=side-nav.component.css.map */

@@ -1,0 +1,78 @@
+@import "../../../stylesheets/partials/grids";
+@import "../../../stylesheets/partials/base";
+
+.hangout-container {
+  margin-top: 191px;
+  width: 228px;
+  font-family: $boggle-medium;
+
+  .header {
+    position: relative;
+    padding-left: 24px;
+    padding-right: 17px;
+
+    .name {
+      color: rgba(74, 74, 74, 0.67);
+      font-size: 12px;
+    }
+
+    .chat-icon {
+      float: right;
+      font-size: 14px;
+      position: absolute;
+      right: 6px;
+      top: 2px;
+      cursor: pointer;
+    }
+
+  }
+
+  .mat-divider {
+    width: 214px;
+    padding: 0 14px;
+    margin-top: 5px;
+  }
+
+  .persons-list {
+    margin-top: 20px;
+
+    .person {
+      &:first-child {
+        padding-top: 0 !important;
+      }
+
+      padding: (23px / 2) 24px;
+      cursor: pointer;
+
+      .avatar {
+        float: left;
+
+        img {
+          @include avatar(50%, 24px, 24px);
+          border: 2px solid #76C043;
+        }
+      }
+
+      .person-info {
+        margin-left: 16px;
+        display: inline-block;
+
+        .name {
+          margin: 0 !important;
+          font-size: 12px;
+          color: #767676;
+          font-weight: 500;
+        }
+
+        .designation {
+          font-size: 10px;
+          margin-top: 0 !important;
+          line-height: 15px;
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+

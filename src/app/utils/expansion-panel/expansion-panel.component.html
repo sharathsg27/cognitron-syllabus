@@ -1,0 +1,78 @@
+<section>
+  <!--Course Header-->
+  <app-course-header (unitValue)="manageUnits($event)"></app-course-header>
+  <article>
+    <mat-accordion displayMode="flat">
+      <!--Expansion Panel-->
+      <mat-expansion-panel #matExpansionPanel *ngFor="let unit of units" [expanded]="true" class="unit">
+        <!--Panel Header-->
+        <mat-expansion-panel-header (click)="expandPanel(matExpansionPanel, $event)" class="unit-header">
+          <mat-panel-title class="header-title">
+            <div class="unit-info">
+              <div class="unit-no m-l-24">{{unit.unit_no}}</div>
+              <div class="unit-time label label--bordered-warning m-l-18">{{unit.total_hours}} Hrs</div>
+            </div>
+            <div class="unit-actions">
+              <div class="action-name m-r-11">Add Topics</div>
+              <app-minus-plus-button [minusBorderRadius]="'100px 0 0 100px'"
+                                     [plusBorderRadius]="'0 100px 100px 0'"></app-minus-plus-button>
+            </div>
+          </mat-panel-title>
+          <mat-divider [vertical]="true" class="header-title-divider"></mat-divider>
+
+        </mat-expansion-panel-header>
+
+        <!--Divider-->
+        <mat-divider class="panel-content-divider"></mat-divider>
+
+        <!--Panel Content-->
+        <mat-grid-list cols="5" rowHeight="100px">
+          <form id="global-form">
+            <mat-grid-tile colspan="1" rowspan="1">
+              <mat-form-field class="mat-text-input m-l-24">
+                <input [(ngModel)]="unit.unit_name" [ngModelOptions]="{standalone: true}" matInput
+                       placeholder="Unit Name">
+              </mat-form-field>
+            </mat-grid-tile>
+
+            <mat-grid-tile colspan="4"></mat-grid-tile>
+
+            <mat-grid-tile colspan="1">
+              <mat-form-field class="mat-text-input m-l-24">
+                <input [(ngModel)]="unit.topics" [ngModelOptions]="{standalone: true}" class="mat-input" matInput
+                       placeholder="Topic Name" type="text">
+              </mat-form-field>
+            </mat-grid-tile>
+
+            <mat-grid-tile colspan="3">
+              <div>
+                <mat-slider #slider (change)="setSliderValue(slider, unit)" (input)="setSliderValue(slider, unit)"
+                            [max]="unit.slider_config.max" [min]="unit.slider_config.min"
+                            [step]="unit.slider_config.step" [value]="unit.slider_config.value" class="slider">
+
+                </mat-slider>
+                <ul class="range-values">
+                  <li *ngFor="let value of rangeValues" class="value"><span
+                    [ngClass]="{'selected-value': value == slider.value}">{{value}}</span></li>
+                </ul>
+              </div>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1">
+              <mat-form-field class="mat-num-input">
+                <input (ngModelChange)="setUnitTime(unit)" [(ngModel)]="unit.total_hours"
+                       [ngModelOptions]="{standalone: true}" matInput min="1" placeholder="Hrs"
+                       step="1"
+                       type="number">
+              </mat-form-field>
+            </mat-grid-tile>
+          </form>
+        </mat-grid-list>
+        <mat-action-row class="action-row">
+          <button (click)="removeUnit(unit)" class="btn --btn-border-danger" mat-button mat-stroked-button>Remove Unit
+          </button>
+          <button class="btn --btn-primary" mat-button mat-flat-button>Save</button>
+        </mat-action-row>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </article>
+</section>

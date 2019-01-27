@@ -1,0 +1,32 @@
+<mat-sidenav-container>
+  <mat-sidenav [fixedInViewport]="true" mode="over" opened>
+    <div class="side-nav-container">
+      <div class="brand">
+        <img alt="NIE" class="logo" height="80" src="../../../assets/nie-logo.png" width="80">
+      </div>
+
+      <div class="subject">
+        <div class="logo">
+          <mat-icon>book</mat-icon>
+        </div>
+        <div class="info">
+          <div class="name">Engineering Mathematics</div>
+          <div class="code">MA111</div>
+        </div>
+      </div>
+
+      <mat-nav-list class="mat-nav-list" role="navigation">
+        <a href="javascript:void(0)" mat-list-item> Define Course Outcome </a>
+        <a href="javascript:void(0)" mat-list-item> Add Units & Duration </a>
+        <a href="javascript:void(0)" mat-list-item> Course Outcome Mapping </a>
+      </mat-nav-list>
+
+      <div class="upload-file text-center">
+        <button mat-stroked-button>Upload File</button>
+      </div>
+
+      <app-hangouts></app-hangouts>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content cdkScrollable></mat-sidenav-content>
+</mat-sidenav-container>

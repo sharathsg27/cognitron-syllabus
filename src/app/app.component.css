@@ -1,0 +1,115 @@
+.row::before,
+.row::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1000px;
+}
+
+@media only screen and (min-width: 768px) {
+  .one {
+    width: 100%;
+  }
+
+  .half {
+    width: calc(100% / 2);
+  }
+
+  .one-third {
+    width: calc(100% / 3);
+  }
+
+  .one-fourth {
+    width: calc(100% / 4);
+  }
+
+  .two-thirds {
+    width: calc(100% / 3 * 2);
+  }
+
+  .column {
+    float: left;
+  }
+}
+
+.one,
+.one-third,
+.two-thirds,
+.one-fourth,
+.half {
+  width: 100%;
+}
+
+.mat-sidenav .side-nav-container {
+  height: 1345px !important;
+  width: 228px !important;
+  background: #fff !important;
+}
+
+.mat-sidenav .side-nav-container .brand {
+  padding: 10px 15px 40px 10px;
+  width: 203px;
+  height: 91px;
+  display: inline-block;
+}
+
+.subject {
+  color: #3E9FED;
+  font-family: Bogle-Regular, sans-serif;
+  letter-spacing: 0;
+}
+
+.subject .logo {
+  vertical-align: sub !important;
+  font-size: 16px;
+  padding-left: 16px;
+}
+
+.subject .info {
+  padding-left: 21px;
+  padding-right: 49px;
+}
+
+.subject .info .name {
+  font-size: 14px;
+}
+
+.subject .info .code {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.mat-nav-list {
+  margin-top: 37px;
+  width: 228px;
+}
+
+.mat-nav-list .mat-list-item {
+  font-size: 14px;
+  height: 38px !important;
+}
+
+.mat-nav-list .mat-list-item .mat-list-item-content {
+  font-family: Bogle-Regular, sans-serif;
+  padding-right: 44px !important;
+  padding-left: 24px !important;
+  font-size: 14px;
+  color: #4A4A4A;
+}
+
+.mat-nav-list .mat-list-item:focus {
+  border-left: 3px solid #3E9FED;
+  font-family: Bogle-Bold, sans-serif;
+  color: #4A4A4A;
+}
+
+.upload-file {
+  margin-top: 32px;
+}
+
+/*# sourceMappingURL=app.component.css.map */

@@ -1,0 +1,142 @@
+.row::before,
+.row::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1000px;
+}
+
+@media only screen and (min-width: 768px) {
+  .one {
+    width: 100%;
+  }
+
+  .half {
+    width: calc(100% / 2);
+  }
+
+  .one-third {
+    width: calc(100% / 3);
+  }
+
+  .one-fourth {
+    width: calc(100% / 4);
+  }
+
+  .two-thirds {
+    width: calc(100% / 3 * 2);
+  }
+
+  .column {
+    float: left;
+  }
+}
+
+.one,
+.one-third,
+.two-thirds,
+.one-fourth,
+.half {
+  width: 100%;
+}
+
+.mat-toolbar {
+  background: #3E9FED;
+  height: 60px;
+  width: 1212px;
+  margin-left: 228px;
+  font-family: Bogle-Regular, sans-serif;
+}
+
+.mat-toolbar .mat-toolbar-row {
+  padding: 0 !important;
+}
+
+.mat-toolbar .nav-menu ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+.mat-toolbar .nav-menu ul li {
+  list-style-type: none;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #D2E8FA;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.mat-toolbar .nav-menu ul li a.nav-link {
+  text-decoration: none;
+  color: #C0DFF8;
+  cursor: pointer;
+  padding: 20px 29px;
+}
+
+.mat-toolbar .nav-menu ul li a.nav-link:hover, .mat-toolbar .nav-menu ul li a.nav-link:active, .mat-toolbar .nav-menu ul li a.nav-link:focus {
+  color: #fff;
+  cursor: pointer;
+}
+
+.mat-toolbar .nav-menu ul li a.nav-link:hover:after {
+  border-left: solid transparent 6px;
+  border-right: solid transparent 6px;
+  border-bottom: solid white 9px;
+  bottom: -21px;
+  content: " ";
+  height: 0;
+  left: 50%;
+  margin-left: -10px;
+  position: absolute;
+  width: 0;
+}
+
+.mat-toolbar .nav-menu ul li a.nav-link .nav-link-inner {
+  height: 20px;
+  font-size: 14px;
+}
+
+.mat-toolbar .nav-actions {
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding-right: 13px;
+}
+
+.separator {
+  display: flex;
+  flex-grow: 1;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 20px;
+}
+
+.avatar img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+}
+
+/*# sourceMappingURL=navbar.component.css.map */

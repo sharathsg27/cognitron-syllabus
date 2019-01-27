@@ -1,0 +1,85 @@
+@import "../../../stylesheets/partials/base";
+
+$background_color_1: transparent;
+$background_color_2: #ffffff;
+
+.quantity {
+  display: inline-block;
+
+  .input-text.qty {
+    width: 34px;
+    height: 27px; // Height reduced by 1px as the border adds 1px more
+    padding: 0 !important;
+    text-align: center;
+    background-color: $background_color_1;
+    border: 1px solid #efefef;
+
+    &:focus {
+      border: 1px solid #3E9FED;
+      border-radius: 3px;
+    }
+
+  }
+
+  input {
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      margin: 0;
+    }
+
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      margin: 0;
+    }
+  }
+}
+
+.quantity.buttons-added {
+  text-align: left;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: top;
+
+  input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+  }
+
+  .minus {
+    @include shape-block(3px 0 0 3px);
+    color: $background_color_2;
+    padding: 7px 10px 8px;
+    width: 29px;
+    height: 28px;
+    background-color: #5C768A;
+    border: transparent;
+    cursor: pointer;
+    border-right: 0;
+
+    &:focus {
+      border: 1px solid #3E9FED;
+      border-radius: 3px;
+    }
+  }
+
+  .plus {
+    @include shape-block(0 3px 3px 0);
+    color: $background_color_2;
+    padding: 7px 10px 8px;
+    width: 29px;
+    height: 28px;
+    background-color: #5C768A;
+    border: transparent;
+    cursor: pointer;
+    border-left: 0;
+
+    &:focus {
+      border: 1px solid #3E9FED;
+      border-radius: 3px;
+    }
+  }
+}

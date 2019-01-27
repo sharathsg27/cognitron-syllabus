@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "../../../stylesheets/partials/_grids.scss",
+    "course-header.component.scss"
+  ],
+  "names": [],
+  "mappings": "AAqBA;AAAA;EAEE;EACA;EACA;;;AAGF;EACE;EACA;EACA;;;AAIF;EACE;IACE;;;EAEF;IACE;;;EAEF;IACE;;;EAEF;IACE;;;EAEF;IACE;;;EAEF;IACE;;;AAKJ;AAAA;AAAA;AAAA;AAAA;EAKE;;;AC1DA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;;AAEA;EACE,WDEE;ECDF;EACA;EACA;EACA,aDTS;;ACYX;EACE,WDNE;ECOF;EACA;EACA,aDdM;;ACkBV;EACE,aDnBQ;;ACqBR;EACE,WDnBE;ECoBF;EACA;EACA;EACA;;AAIJ;EACE;EACA;;AAEA;EACE,WDhCE;ECiCF;EACA;EACA;EACA;EACA",
+  "file": "course-header.component.css"
+}
