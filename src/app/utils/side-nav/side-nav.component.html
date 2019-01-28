@@ -2,7 +2,7 @@
   <mat-sidenav [fixedInViewport]="true" mode="over" opened>
     <div class="side-nav-container">
       <div class="brand">
-        <img alt="NIE" class="logo" height="80" src="../../../assets/nie-logo.png" width="80">
+        <img alt="NIE" class="logo" src="../../../assets/nie-logo.png">
       </div>
 
       <div class="subject">
@@ -16,13 +16,20 @@
       </div>
 
       <mat-nav-list class="mat-nav-list" role="navigation">
-        <a href="javascript:void(0)" mat-list-item> Define Course Outcome </a>
-        <a href="javascript:void(0)" mat-list-item> Add Units & Duration </a>
-        <a href="javascript:void(0)" mat-list-item> Course Outcome Mapping </a>
+        <a href="javascript:void(0)" mat-list-item>
+          <span class="name m-r-25">Define Course Outcome</span>
+          <mat-icon class="chat-icon text-success name-selected">check_circle</mat-icon>
+        </a>
+        <a href="javascript:void(0)" mat-list-item>
+          <span class="name">Add Units & Duration</span>
+        </a>
+        <a href="javascript:void(0)" mat-list-item>
+          <span class="name">Course Outcome Mapping </span>
+        </a>
       </mat-nav-list>
 
       <div class="upload-file text-center">
-        <button mat-stroked-button>Upload File</button>
+        <button mat-stroked-button><span class="name">Upload File</span></button>
       </div>
 
       <app-hangouts></app-hangouts>

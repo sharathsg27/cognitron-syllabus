@@ -36,7 +36,6 @@
     float: left;
   }
 }
-
 .one,
 .one-third,
 .two-thirds,
@@ -54,11 +53,9 @@ section .header {
   width: 1212px;
   padding: 0 23px !important;
 }
-
 section .header .main-info {
   flex: 1 1 auto;
 }
-
 section .header .main-info .name {
   font-size: 16px;
   color: #000000;
@@ -67,17 +64,18 @@ section .header .main-info .name {
   font-family: Bogle-Regular, sans-serif;
 }
 
+section .header .main-info .divider {
+  height: 0.85em !important;
+}
 section .header .main-info .title {
   font-size: 16px;
   color: rgba(74, 74, 74, 0.84);
   letter-spacing: 0;
   font-family: Bogle-Bold, sans-serif;
 }
-
 section .header .additional-info {
   font-family: Bogle-Bold, sans-serif;
 }
-
 section .header .additional-info .name {
   font-size: 12px;
   color: rgba(74, 74, 74, 0.67);
@@ -85,12 +83,10 @@ section .header .additional-info .name {
   text-transform: uppercase;
   margin-right: 15px;
 }
-
 section .header .main-actions {
   display: flex;
   align-items: center;
 }
-
 section .header .main-actions .name {
   font-size: 12px;
   color: rgba(74, 74, 74, 0.67);

@@ -24,7 +24,7 @@ import {
   MatSidenavContainer,
   MatSidenavContent, MatSlider, MatSliderModule,
   MatToolbar,
-  MatToolbarRow
+  MatToolbarRow, MatTooltip, MatTooltipModule
 } from '@angular/material';
 import {CourseUnitsComponent} from '../syllabus/components/course-units/course-units.component';
 import {SideNavComponent} from '../../utils/side-nav/side-nav.component';
@@ -74,7 +74,8 @@ import {FormsModule} from '@angular/forms';
     MatFormFieldModule,
     MatInputModule,
     MatGridListModule,
-    FormsModule
+    FormsModule,
+    MatTooltipModule
   ],
   exports: [
     // Components

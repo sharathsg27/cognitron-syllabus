@@ -26,7 +26,7 @@
         <mat-divider class="panel-content-divider"></mat-divider>
 
         <!--Panel Content-->
-        <mat-grid-list cols="5" rowHeight="100px">
+        <mat-grid-list cols="5" rowHeight="{{panelHeight}}">
           <form id="global-form">
             <mat-grid-tile colspan="1" rowspan="1">
               <mat-form-field class="mat-text-input m-l-24">
@@ -45,14 +45,19 @@
             </mat-grid-tile>
 
             <mat-grid-tile colspan="3">
-              <div>
+              <div class="slider-container">
                 <mat-slider #slider (change)="setSliderValue(slider, unit)" (input)="setSliderValue(slider, unit)"
+                            [step]="unit.slider_config.step"
                             [max]="unit.slider_config.max" [min]="unit.slider_config.min"
-                            [step]="unit.slider_config.step" [value]="unit.slider_config.value" class="slider">
-
+                            [value]="unit.slider_config.value" class="slider">
                 </mat-slider>
                 <ul class="range-values">
-                  <li *ngFor="let value of rangeValues" class="value"><span
+                  <!--Time Slider (Tooltip under work)-->
+                  <li #tooltip="matTooltip" *ngFor="let value of rangeValues"
+                      [matTooltipPosition]="'above'"
+                      class="value"
+                      matTooltip="Predictive Analysis | {{slider.value}} Hrs (Avg)"
+                      matTooltipClass="slider-tooltip"><span
                     [ngClass]="{'selected-value': value == slider.value}">{{value}}</span></li>
                 </ul>
               </div>

@@ -1,15 +1,16 @@
-import {Component, OnInit} from '@angular/core';
-import {MatExpansionPanel} from '@angular/material';
+import {AfterContentChecked, AfterViewInit, ChangeDetectorRef, Component, OnInit, ViewChild} from '@angular/core';
+import {MatExpansionPanel, MatTooltip} from '@angular/material';
 
 @Component({
   selector: 'app-expansion-panel',
   templateUrl: './expansion-panel.component.html',
   styleUrls: ['./expansion-panel.component.scss']
 })
-export class ExpansionPanelComponent implements OnInit {
+export class ExpansionPanelComponent implements AfterViewInit, AfterContentChecked {
   rangeValues: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  unitInit = 'Unit - ';
   units: any[] = [{
-    unit_no: 'Unit - 1',
+    unit_no: this.unitInit.concat('1'),
     unit_name: '',
     total_hours: 1,
     topics: '',
@@ -20,11 +21,21 @@ export class ExpansionPanelComponent implements OnInit {
       value: 1
     }
   }];
+  panelHeight = '118px';
 
-  constructor() {
+  @ViewChild('tooltip') tooltip: MatTooltip;
+
+
+  constructor(private changeDetector: ChangeDetectorRef) {
   }
 
-  ngOnInit() {
+  ngAfterContentChecked() {
+  }
+
+
+  ngAfterViewInit() {
+    this.tooltip.show();
+    this.changeDetector.detectChanges();
   }
 
   // Expand Expansion Panel only when clicked on Accordion
@@ -41,9 +52,8 @@ export class ExpansionPanelComponent implements OnInit {
     let count = parseInt(event.value);
     if (event.actionType === 'plus') {
       for (let i = 1; i <= count; i++) {
-        let number = 'unit'.toUpperCase().concat('-') + i;
         this.units.unshift({
-          unit_no: number,
+          unit_no: this.unitInit + (this.units.length + 1),
           unit_name: '',
           total_hours: 1,
           topics: '',

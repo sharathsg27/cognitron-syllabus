@@ -22,6 +22,10 @@ section {
         font-family: $boggle-regular;
       }
 
+      .divider {
+        height: 0.85em !important;
+      }
+
       .title {
         font-size: $font-16;
         color: rgba(74, 74, 74, 0.84);

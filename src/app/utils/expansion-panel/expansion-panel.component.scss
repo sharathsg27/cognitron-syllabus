@@ -12,9 +12,10 @@ section {
     ::ng-deep .mat-expansion-indicator {
       align-content: center;
       align-items: center;
-      text-align: center;
-      display: block;
+      display: flex;
       width: 48px;
+      height: 67px;
+      justify-content: center;
     }
   }
 
@@ -71,6 +72,7 @@ section {
 
     .mat-action-row.action-row {
       justify-content: center;
+      padding: 24px 0;
     }
   }
 
@@ -79,39 +81,98 @@ section {
   }
 }
 
-// Slider
-.slider {
+
+::ng-deep .mat-slider {
+  height: 9px;
+  width: 526px !important;
+  max-width: 527px !important;
+
+  .mat-slider-wrapper {
+    width: 510px !important;
+    max-width: 527px !important;
+
+    .mat-slider-thumb-container {
+
+      .mat-slider-thumb {
+        right: -13px !important;
+        bottom: -13px !important;
+      }
+    }
+  }
+}
+
+::ng-deep .mat-slider.mat-slider-horizontal {
+  padding: 0 8px !important;
+  width: 526px !important;
+  max-width: 527px !important;
+}
+
+::ng-deep .mat-slider.mat-slider-horizontal .mat-slider-track-wrapper {
+  width: 520px !important;
+  max-width: 527px !important;
   border-radius: 4.5px;
-  width: 590px;
   height: 9px;
 }
 
-.range-values {
-  list-style: none;
-  padding: 10px 0 !important;
+::ng-deep .mat-slider.mat-slider-horizontal .mat-slider-track-background {
+  background: #EFF0F4 !important;
+}
 
-  .value {
-    display: inline-block;
-    font-size: 12px;
-    color: #9B9B9B;
-    letter-spacing: 0.62px;
-    padding: 0 56px 0 0;
+::ng-deep .mat-slider.mat-slider-horizontal .mat-slider-track-background,
+::ng-deep .mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+  height: 100%;
+  border-radius: 4.5px;
+}
 
-    &:last-child {
-      padding-right: 0 !important;
+::ng-deep .mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+  background-color: #5C768A;
+  border-radius: 4.5px;
+}
+
+::ng-deep .mat-accent .mat-slider-thumb {
+  height: 19px;
+  width: 19px;
+  background-color: white;
+  border: solid 2px gray;
+  bottom: -13px;
+  right: -20px;
+}
+
+::ng-deep .mat-slider-min-value:not(.mat-slider-thumb-label-showing) .mat-slider-thumb {
+  background-color: white;
+}
+
+// Slider
+.slider-container {
+
+  .range-values {
+    width: 539px !important;
+    list-style: none;
+    padding: 0 !important;
+    display: block;
+
+    .value {
+      display: inline-block;
+      font-size: $font-12;
+      color: #9B9B9B;
+      padding-right: 50px;
+
+      &:last-child {
+        padding: 0 !important;
+
+        .selected-value {
+          padding: 5px 5px;
+        }
+      }
     }
 
-    &:first-child {
-      padding-left: 0 !important;
+    .selected-value {
+      color: white;
+      background: #C798D1;
+      border-radius: 50%;
+      padding: 4px 7px;
+      text-align: center;
     }
-  }
-
-  .selected-value {
-    color: white;
-    background: #C798D1;
-    /* border: 1px solid #C798D1; */
-    border-radius: 15px;
-    padding: 5px 9px;
   }
 }
 

@@ -20,7 +20,7 @@
       float: right;
       font-size: 14px;
       position: absolute;
-      right: 6px;
+      right: 14px;
       top: 2px;
       cursor: pointer;
     }
@@ -34,12 +34,9 @@
   }
 
   .persons-list {
-    margin-top: 20px;
+    margin-top: (20px - (23px / 2));
 
     .person {
-      &:first-child {
-        padding-top: 0 !important;
-      }
 
       padding: (23px / 2) 24px;
       cursor: pointer;

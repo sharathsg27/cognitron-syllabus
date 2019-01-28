@@ -1,7 +1,6 @@
 .quantity {
   display: inline-block;
 }
-
 .quantity .input-text.qty {
   width: 34px;
   height: 27px;
@@ -10,18 +9,15 @@
   background-color: transparent;
   border: 1px solid #efefef;
 }
-
 .quantity .input-text.qty:focus {
   border: 1px solid #3E9FED;
   border-radius: 3px;
 }
-
 .quantity input::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   margin: 0;
 }
-
 .quantity input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -34,14 +30,12 @@
   white-space: nowrap;
   vertical-align: top;
 }
-
 .quantity.buttons-added input {
   display: inline-block;
   margin: 0;
   vertical-align: top;
   box-shadow: none;
 }
-
 .quantity.buttons-added .minus {
   border-radius: 3px 0 0 3px;
   color: #ffffff;
@@ -53,12 +47,10 @@
   cursor: pointer;
   border-right: 0;
 }
-
 .quantity.buttons-added .minus:focus {
   border: 1px solid #3E9FED;
   border-radius: 3px;
 }
-
 .quantity.buttons-added .plus {
   border-radius: 0 3px 3px 0;
   color: #ffffff;
@@ -70,7 +62,6 @@
   cursor: pointer;
   border-left: 0;
 }
-
 .quantity.buttons-added .plus:focus {
   border: 1px solid #3E9FED;
   border-radius: 3px;

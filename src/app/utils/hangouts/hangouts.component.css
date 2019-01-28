@@ -36,7 +36,6 @@
     float: left;
   }
 }
-
 .one,
 .one-third,
 .two-thirds,
@@ -50,50 +49,38 @@
   width: 228px;
   font-family: Bogle-medium, sans-serif;
 }
-
 .hangout-container .header {
   position: relative;
   padding-left: 24px;
   padding-right: 17px;
 }
-
 .hangout-container .header .name {
   color: rgba(74, 74, 74, 0.67);
   font-size: 12px;
 }
-
 .hangout-container .header .chat-icon {
   float: right;
   font-size: 14px;
   position: absolute;
-  right: 6px;
+  right: 14px;
   top: 2px;
   cursor: pointer;
 }
-
 .hangout-container .mat-divider {
   width: 214px;
   padding: 0 14px;
   margin-top: 5px;
 }
-
 .hangout-container .persons-list {
-  margin-top: 20px;
+  margin-top: 8.5px;
 }
-
 .hangout-container .persons-list .person {
   padding: 11.5px 24px;
   cursor: pointer;
 }
-
-.hangout-container .persons-list .person:first-child {
-  padding-top: 0 !important;
-}
-
 .hangout-container .persons-list .person .avatar {
   float: left;
 }
-
 .hangout-container .persons-list .person .avatar img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -102,19 +89,16 @@
   width: 24px;
   border: 2px solid #76C043;
 }
-
 .hangout-container .persons-list .person .person-info {
   margin-left: 16px;
   display: inline-block;
 }
-
 .hangout-container .persons-list .person .person-info .name {
   margin: 0 !important;
   font-size: 12px;
   color: #767676;
   font-weight: 500;
 }
-
 .hangout-container .persons-list .person .person-info .designation {
   font-size: 10px;
   margin-top: 0 !important;

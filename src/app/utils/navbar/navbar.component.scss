@@ -44,18 +44,18 @@
             cursor: pointer;
           }
 
-          &:hover:after {
-            border-left: solid transparent 6px;
-            border-right: solid transparent 6px;
-            border-bottom: solid white 9px;
-            bottom: -21px;
-            content: " ";
-            height: 0;
-            left: 50%;
-            margin-left: -10px;
-            position: absolute;
-            width: 0;
-          }
+          //&:hover:after {
+          //  border-left: solid transparent 6px;
+          //  border-right: solid transparent 6px;
+          //  border-bottom: solid white 9px;
+          //  bottom: -20px;
+          //  content: " ";
+          //  height: 0;
+          //  left: 50%;
+          //  margin-left: -10px;
+          //  position: absolute;
+          //  width: 0;
+          //}
 
           .nav-link-inner {
             height: 20px;
@@ -74,7 +74,6 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    padding-right: 13px;
   }
 
 }
@@ -85,17 +84,31 @@
 }
 
 .avatar {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
   margin-left: 20px;
+  margin-right: 13px;
 
   img {
     @include avatar(50%, 24px, 24px);
+    cursor: pointer;
   }
 }
 
-// Arrow pointer for Nav Options
+.active-link {
+  color: #fff !important;
+
+  &:after {
+    border-left: solid transparent 6px !important;
+    border-right: solid transparent 6px !important;
+    border-bottom: solid white 9px;
+    bottom: -20px !important;
+    content: " " !important;
+    height: 0 !important;
+    left: 50% !important;
+    margin-left: -10px !important;
+    position: absolute !important;
+    width: 0 !important;
+  }
+}
 
 
 

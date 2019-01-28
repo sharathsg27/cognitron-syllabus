@@ -3,23 +3,28 @@
     <div class="separator"></div>
     <div class="nav-menu">
       <ul>
-        <li><a class="nav-link" routerLink="/"><span class="nav-link-inner">Dashboard</span></a></li>
-        <li><a class="nav-link" routerLink="/syllabus"><span class="nav-link-inner">Syllabus</span></a></li>
-        <li><a class="nav-link" routerLink="/"><span class="nav-link-inner">Test</span></a></li>
-        <li><a class="nav-link" routerLink="/"><span class="nav-link-inner">Reports</span></a></li>
+        <li><a [routerLinkActiveOptions]="{exact: true}" class="nav-link" routerLink="/dashboard"
+               routerLinkActive="active-link"><span class="nav-link-inner">Dashboard</span></a></li>
+        <li><a [routerLinkActiveOptions]="{exact: true}" class="nav-link" routerLink="/syllabus"
+               routerLinkActive="active-link"><span class="nav-link-inner">Syllabus</span></a></li>
+        <li><a class="nav-link"><span class="nav-link-inner">Test</span></a></li>
+        <li><a class="nav-link"><span class="nav-link-inner">Reports</span></a></li>
       </ul>
     </div>
     <div class="separator"></div>
     <div class="nav-actions">
-      <button mat-icon-button>
+      <button class="m-r-4" mat-icon-button>
         <mat-icon>ondemand_video</mat-icon>
       </button>
-      <button mat-icon-button>
+      <button class="m-r-4" mat-icon-button>
         <mat-icon matBadge="10" matBadgeColor="warn">notifications</mat-icon>
       </button>
-      <div class="avatar">
+      <button class="avatar" mat-icon-button>
         <img alt="User" src="../../../assets/member-2.jpeg">
-      </div>
+      </button>
+      <!--<div class="avatar">-->
+      <!--<img alt="User" src="../../../assets/member-2.jpeg">-->
+      <!--</div>-->
     </div>
   </mat-toolbar-row>
 </mat-toolbar>

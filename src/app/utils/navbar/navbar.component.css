@@ -36,7 +36,6 @@
     float: left;
   }
 }
-
 .one,
 .one-third,
 .two-thirds,
@@ -52,11 +51,9 @@
   margin-left: 228px;
   font-family: Bogle-Regular, sans-serif;
 }
-
 .mat-toolbar .mat-toolbar-row {
   padding: 0 !important;
 }
-
 .mat-toolbar .nav-menu ul {
   display: flex;
   flex-direction: row;
@@ -65,7 +62,6 @@
   padding: 0;
   margin: 0;
 }
-
 .mat-toolbar .nav-menu ul li {
   list-style-type: none;
   line-height: 24px;
@@ -78,37 +74,20 @@
   cursor: pointer;
   position: relative;
 }
-
 .mat-toolbar .nav-menu ul li a.nav-link {
   text-decoration: none;
   color: #C0DFF8;
   cursor: pointer;
   padding: 20px 29px;
 }
-
 .mat-toolbar .nav-menu ul li a.nav-link:hover, .mat-toolbar .nav-menu ul li a.nav-link:active, .mat-toolbar .nav-menu ul li a.nav-link:focus {
   color: #fff;
   cursor: pointer;
 }
-
-.mat-toolbar .nav-menu ul li a.nav-link:hover:after {
-  border-left: solid transparent 6px;
-  border-right: solid transparent 6px;
-  border-bottom: solid white 9px;
-  bottom: -21px;
-  content: " ";
-  height: 0;
-  left: 50%;
-  margin-left: -10px;
-  position: absolute;
-  width: 0;
-}
-
 .mat-toolbar .nav-menu ul li a.nav-link .nav-link-inner {
   height: 20px;
   font-size: 14px;
 }
-
 .mat-toolbar .nav-actions {
   line-height: 40px;
   border-radius: 50%;
@@ -116,7 +95,6 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
-  padding-right: 13px;
 }
 
 .separator {
@@ -125,18 +103,33 @@
 }
 
 .avatar {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
   margin-left: 20px;
+  margin-right: 13px;
 }
-
 .avatar img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
   height: 24px;
   width: 24px;
+  cursor: pointer;
+}
+
+.active-link {
+  color: #fff !important;
+}
+
+.active-link:after {
+  border-left: solid transparent 6px !important;
+  border-right: solid transparent 6px !important;
+  border-bottom: solid white 9px;
+  bottom: -20px !important;
+  content: " " !important;
+  height: 0 !important;
+  left: 50% !important;
+  margin-left: -10px !important;
+  position: absolute !important;
+  width: 0 !important;
 }
 
 /*# sourceMappingURL=navbar.component.css.map */
