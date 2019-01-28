@@ -1,50 +1,134 @@
+.row::before,
+.row::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1000px;
+}
+
+@media only screen and (min-width: 768px) {
+  .one {
+    width: 100%;
+  }
+
+  .half {
+    width: calc(100% / 2);
+  }
+
+  .one-third {
+    width: calc(100% / 3);
+  }
+
+  .one-fourth {
+    width: calc(100% / 4);
+  }
+
+  .two-thirds {
+    width: calc(100% / 3 * 2);
+  }
+
+  .column {
+    float: left;
+  }
+}
+
+.one,
+.one-third,
+.two-thirds,
+.one-fourth,
+.half {
+  width: 100%;
+}
+
 .mat-sidenav .side-nav-container {
   height: 1345px !important;
   width: 228px !important;
   background: #fff !important;
 }
-
 .mat-sidenav .side-nav-container .brand {
-  padding: 10px 24px;
+  padding: 10px 15px 40px 10px;
   width: 203px;
   height: 91px;
   display: inline-block;
 }
 
-.subject {
-  color: #3E9FED;
-  font-family: Bogle-Regular, serif;
-  font-size: 14px;
-  padding: 0 24px;
+.mat-sidenav .side-nav-container .brand img {
+  width: 80px;
+  height: 80px;
 }
 
+.subject {
+  color: #3E9FED;
+  font-family: Bogle-Regular, sans-serif;
+  letter-spacing: 0;
+}
 .subject .logo {
   vertical-align: sub !important;
   font-size: 16px;
+  padding-left: 16px;
+}
+
+.subject .info {
+  padding-left: 21px;
+  padding-right: 49px;
+}
+
+.subject .info .name {
+  font-size: 14px;
+}
+
+.subject .info .code {
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .mat-nav-list {
   margin-top: 37px;
   width: 228px;
 }
-
 .mat-nav-list .mat-list-item {
-  font-size: 14px;
-  height: 38px;
+  height: 38px !important;
+}
+.mat-nav-list .mat-list-item:focus {
+  border-left: 3px solid #3E9FED;
+}
+
+.mat-nav-list .mat-list-item:focus .name {
+  color: #4A4A4A;
+  font-family: Bogle-Bold, sans-serif;
 }
 
 .mat-nav-list .mat-list-item .mat-list-item-content {
-  padding: 0 24px !important;
-}
-
-.mat-nav-list .mat-list-item:focus {
-  border-left: 3px solid #3E9FED;
-  font-weight: 600;
+  font-family: Bogle-Regular, sans-serif;
+  padding-right: 15px !important;
+  padding-left: 24px !important;
+  font-size: 13px;
   color: #4A4A4A;
 }
 
-.action-control {
+.mat-nav-list .mat-list-item .mat-list-item-content .name-selected {
+  display: flex;
+  align-items: center;
+  font-size: 18px !important;
+}
+
+.upload-file {
   margin-top: 32px;
+}
+
+.upload-file button {
+  border: 1px solid #5C768A;
+  border-radius: 2px;
+  font-family: Bogle-Bold, sans-serif;
+  font-size: 14px;
+  color: #5C768A;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=side-nav.component.css.map */

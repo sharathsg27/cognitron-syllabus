@@ -63,7 +63,6 @@ section .header .main-info .name {
   line-height: 22px;
   font-family: Bogle-Regular, sans-serif;
 }
-
 section .header .main-info .divider {
   height: 0.85em !important;
 }

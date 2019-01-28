@@ -118,7 +118,6 @@
 .active-link {
   color: #fff !important;
 }
-
 .active-link:after {
   border-left: solid transparent 6px !important;
   border-right: solid transparent 6px !important;
