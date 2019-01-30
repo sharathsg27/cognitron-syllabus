@@ -200,27 +200,40 @@ input[type=number]::-webkit-outer-spin-button {
 
 .btn {
   padding: 11px 12px;
+  position: relative;
 }
 .btn span {
+  position: absolute;
   font-size: 14px;
   font-family: Bogle-Bold, sans-serif;
   text-transform: uppercase;
 }
 
 .--btn-border-danger {
+  width: 119px;
+  height: 42px;
   border: 1px solid #CE7680;
   border-radius: 2px;
-  width: 119px;
 }
 .--btn-border-danger:hover {
   background-color: rgba(253, 206, 203, 0.34) !important;
 }
+.--btn-border-danger span {
+  left: 10%;
+  top: 8%;
+}
 
 .--btn-primary {
+  width: 92px;
+  height: 42px;
   background: #3E9FED;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
   border-radius: 2px;
-  width: 92px;
+}
+.--btn-primary span {
+  left: 25%;
+  right: 25%;
+  bottom: 6%;
 }
 
 .m-l-1 {

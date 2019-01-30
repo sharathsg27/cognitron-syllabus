@@ -135,8 +135,10 @@ input[type=number]::-webkit-outer-spin-button {
 // Default Button
 .btn {
   padding: 11px 12px;
+  position: relative;
 
   span {
+    position: absolute;
     font-size: $font-14;
     font-family: $boggle-bold;
     text-transform: uppercase;
@@ -146,23 +148,36 @@ input[type=number]::-webkit-outer-spin-button {
 
 // Bordered buttons
 .--btn-border-danger {
+  width: 119px;
+  height: 42px;
   @extend .text-danger;
   border: 1px solid #CE7680;
   border-radius: 2px;
-  width: 119px;
 
   &:hover {
     background-color: rgba(253, 206, 203, 0.34) !important;
+  }
+
+  span {
+    left: 10%;
+    top: 8%;
   }
 }
 
 // Filled buttons
 .--btn-primary {
   @extend .text-white;
+  width: 92px;
+  height: 42px;
   background: #3E9FED;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
   border-radius: 2px;
-  width: 92px;
+
+  span {
+    left: 25%;
+    right: 25%;
+    bottom: 6%;
+  }
 }
 
 // Dynamic Margin's
