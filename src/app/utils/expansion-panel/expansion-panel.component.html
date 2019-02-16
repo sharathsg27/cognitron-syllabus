@@ -53,12 +53,8 @@
                 </mat-slider>
                 <ul class="range-values">
                   <!--Time Slider (Tooltip under work)-->
-                  <li #tooltip="matTooltip" *ngFor="let value of rangeValues"
-                      [matTooltipPosition]="'above'"
-                      class="value"
-                      matTooltip="Predictive Analysis | {{slider.value}} Hrs (Avg)"
-                      matTooltipClass="slider-tooltip"><span
-                    [ngClass]="{'selected-value': value == slider.value}">{{value}}</span></li>
+                  <li *ngFor="let value of rangeValues"
+                      class="value"><span [ngClass]="{'selected-value': value == slider.value}">{{value}}</span></li>
                 </ul>
               </div>
             </mat-grid-tile>

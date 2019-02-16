@@ -6,7 +6,7 @@ import {MatExpansionPanel, MatTooltip} from '@angular/material';
   templateUrl: './expansion-panel.component.html',
   styleUrls: ['./expansion-panel.component.scss']
 })
-export class ExpansionPanelComponent implements AfterViewInit, AfterContentChecked {
+export class ExpansionPanelComponent implements AfterContentChecked {
   rangeValues: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   unitInit = 'Unit - ';
   units: any[] = [{
@@ -26,16 +26,10 @@ export class ExpansionPanelComponent implements AfterViewInit, AfterContentCheck
   @ViewChild('tooltip') tooltip: MatTooltip;
 
 
-  constructor(private changeDetector: ChangeDetectorRef) {
+  constructor() {
   }
 
   ngAfterContentChecked() {
-  }
-
-
-  ngAfterViewInit() {
-    this.tooltip.show();
-    this.changeDetector.detectChanges();
   }
 
   // Expand Expansion Panel only when clicked on Accordion
