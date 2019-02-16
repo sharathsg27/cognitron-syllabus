@@ -1,30 +1,20 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {
-  MatAccordion,
-  MatBadge,
-  MatButton,
-  MatChip,
-  MatChipList,
-  MatDivider,
-  MatExpansionPanel,
-  MatExpansionPanelActionRow,
-  MatExpansionPanelHeader,
-  MatExpansionPanelTitle,
-  MatFormField, MatFormFieldControl,
+  MatBadge, MatBadgeModule,
+  MatButton, MatButtonModule,
+  MatDivider, MatDividerModule, MatExpansionModule,
   MatFormFieldModule, MatGridListModule,
-  MatIcon,
-  MatInput,
+  MatIcon, MatIconModule,
   MatInputModule,
   MatList,
-  MatListItem,
-  MatNavList,
-  MatRipple,
+  MatListItem, MatListModule, MatNavList,
+  MatRippleModule,
   MatSidenav,
   MatSidenavContainer,
-  MatSidenavContent, MatSlider, MatSliderModule,
-  MatToolbar,
-  MatToolbarRow, MatTooltip, MatTooltipModule
+  MatSidenavContent, MatSidenavModule, MatSliderModule,
+  MatToolbar, MatToolbarModule,
+  MatToolbarRow, MatTooltipModule
 } from '@angular/material';
 import {CourseUnitsComponent} from '../syllabus/components/course-units/course-units.component';
 import {SideNavComponent} from '../../utils/side-nav/side-nav.component';
@@ -32,7 +22,6 @@ import {HangoutsComponent} from '../../utils/hangouts/hangouts.component';
 import {ExpansionPanelComponent} from '../../utils/expansion-panel/expansion-panel.component';
 import {PortalModule} from '@angular/cdk/portal';
 import {MinusPlusButtonComponent} from '../../utils/minus-plus-button/minus-plus-button.component';
-import {MatExpansionModule} from '@angular/material/typings/expansion';
 import {CourseHeaderComponent} from '../../utils/course-header/course-header.component';
 import {FormsModule} from '@angular/forms';
 
@@ -44,29 +33,7 @@ import {FormsModule} from '@angular/forms';
     HangoutsComponent,
     ExpansionPanelComponent,
     MinusPlusButtonComponent,
-    CourseHeaderComponent,
-    // Tools
-    MatIcon,
-    MatSidenavContainer,
-    MatSidenavContent,
-    MatSidenav,
-    MatToolbar,
-    MatToolbarRow,
-    MatNavList,
-    MatDivider,
-    MatListItem,
-    MatList,
-    MatRipple,
-    MatButton,
-    MatAccordion,
-    MatExpansionPanel,
-    MatExpansionPanelTitle,
-    MatExpansionPanelHeader,
-    MatExpansionPanelActionRow,
-    MatChip,
-    MatChipList,
-    MatBadge,
-    MatSlider
+    CourseHeaderComponent
   ],
   imports: [
     CommonModule,
@@ -75,7 +42,17 @@ import {FormsModule} from '@angular/forms';
     MatInputModule,
     MatGridListModule,
     FormsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatExpansionModule,
+    MatRippleModule,
+    MatBadgeModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatIconModule,
+    MatListModule,
+    MatSliderModule,
+    MatSidenavModule,
+    MatToolbarModule
   ],
   exports: [
     // Components
@@ -86,27 +63,13 @@ import {FormsModule} from '@angular/forms';
     MinusPlusButtonComponent,
     CourseHeaderComponent,
     // Tools
-    MatIcon,
-    MatSidenavContainer,
-    MatSidenavContent,
-    MatSidenav,
-    MatToolbar,
-    MatToolbarRow,
-    MatNavList,
-    MatDivider,
-    MatListItem,
-    MatList,
-    MatRipple,
-    MatButton,
-    MatAccordion,
-    MatExpansionPanel,
-    MatExpansionPanelTitle,
-    MatExpansionPanelHeader,
-    MatExpansionPanelActionRow,
-    MatChip,
-    MatChipList,
-    MatBadge,
-    MatSlider
+    MatSidenavModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatDividerModule,
+    MatBadgeModule,
+    MatButtonModule,
+    MatSliderModule
   ],
 })
 export class SharedToolsModule {
