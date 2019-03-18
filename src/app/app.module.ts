@@ -6,6 +6,7 @@ import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NavbarComponent} from './utils/navbar/navbar.component';
 import {SharedToolsModule} from './modules/shared-tools/shared-tools.module';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import {SharedToolsModule} from './modules/shared-tools/shared-tools.module';
     BrowserModule,
     AppRoutingModule,
     SharedToolsModule,
+    FormsModule,
     BrowserAnimationsModule
   ],
   providers: [],
